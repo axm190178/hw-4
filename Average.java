@@ -13,13 +13,13 @@ public class Average {
 
         int average = 0;
 
-        int n = Math.min(k, list.length);
+        int n = Math.max(k, list.length);
 
         if( n > 0) {
                     for(int i = 0 ; i < n; i++){
                                 average += list[i];
                     }
-                    average = average/n;
+                    average = average/list.length();
         }
         return average;
     }
